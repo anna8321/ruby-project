@@ -3,8 +3,8 @@
       <h1>Anna MEI</h1>
       <nav>
         <ul>
-          <li><a href="#">Accueil</a></li>
-          <li><a href="#">A propos</a></li>
+          <li><%= link_to 'Accueil', root_path %></li>
+          <li><%= link_to 'A propos', @user %></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
@@ -23,20 +23,20 @@
 
         <div class="cards">
             <div class="card_portfolio">
-              <img src="images/sub_capture.jpg" alt="Projet Prestashop"/>
+              <img src="/assets/sub_capture.jpg" alt="Projet Prestashop"/>
               <div class="card_portfolio_infos">
                 <div class="project_description">
-                  <h2>Projet Prestashop</h2>
+                  <h2><%= link_to 'Projet prestashop', user_project_path(:url, 2) %></h2>
                   <p>Refonte du site internet Subflock de A à Z</p>
                 </div>
                 <div class="div_img">
-                  <img src="images/logo_real_r.png" alt="logo entreprise" class="card_logo avatar-bordered" />
+                  <img src="assets/logo_real_r.png" alt="logo entreprise" class="card_logo avatar-bordered" />
                 </div>
               </div>
             </div>
 
             <div class="card_portfolio">
-              <img src="images/sub_capture.jpg" alt="Projet Our World" />
+              <img src="assets/sub_capture.jpg" alt="Projet Our World" />
               <div class="card_portfolio_infos">
                 <div class="project_description">
                   <h2>Our World</h2>
@@ -53,7 +53,7 @@
         <h3>Réalisés</h3>
         <div class="cards">
               <div class="card_portfolio">
-                <img src="images/sub_capture.jpg" alt="Projet Our World" />
+                <img src="assets/sub_capture.jpg" alt="Projet Our World" />
                 <div class="card_portfolio_infos">
                   <div class="project_description">
                     <h2>Our World</h2>
@@ -66,7 +66,7 @@
               </div>
 
               <div class="card_portfolio">
-                <img src="images/sub_capture.jpg" alt="Projet Our World" />
+                <img src="assets/sub_capture.jpg" alt="Projet Our World" />
                 <div class="card_portfolio_infos">
                   <div class="project_description">
                     <h2>Our World</h2>
@@ -95,8 +95,8 @@
     <hr>
     <footer>
       <div class="social_links">
-        <a href="#">Lien Github</a>
-        <a href="#">Lien Linkedin</a>
+        <a href="https://github.com/anna8321" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/anais-meirone/" target="_blank"><i class="fab fa-linkedin"></i></a>
       </div>
 
       <p>Copyright Anna MEI - Tous droits réservés</p>
