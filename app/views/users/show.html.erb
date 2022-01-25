@@ -1,2 +1,72 @@
-this is me !!
-<%= link_to 'Accueil', user_projects_path(user_url) %>
+<%# user_projects_path(user_url) %>
+<section class="user_show">
+
+<h1>A propos de moi</h1>
+  <article class="user_presentation">
+    <img src="/assets/sub_capture.jpg" alt="">
+
+    <div class="user_introduction">
+      <h2>Developpeuse Web en cours</h2>
+      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <div class="technical_skills">
+        <h2>Ce que je connais:</h2>
+        <div class="user_skill_table">
+        <ul class="user_list">
+          <li><i class="far fa-eye"></i> Html/css</li>
+          <li><i class="fas fa-code"></i> Ruby (Ruby on Rails)</li>
+          <li><i class="fas fa-database"></i> PostgreSQL</li>
+
+        </ul>
+        <ul class="user_list">
+          <li><i class="fab fa-wordpress"></i> WordPress/Prestashop</li>
+          <li><i class="fas fa-code"></i> Php (Symfony)</li>
+          <li><i class="fas fa-terminal"></i> Git, Github</li>
+        </ul>
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+<h1>Mon parcours</h1>
+  <article class="user_background">
+      <div class="user_description">
+        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      </div>
+      <div class="user_description">
+        <h2>Formations</h2>
+
+
+      </div>
+  </article>
+
+<div class= "formation-cards">
+  <div class="formation-card">
+    <div class="school">
+      <div class="school_infos">
+        <h2>Double master franco-chinois</h2>
+        <p>Management du tourisme (3ans)</p>
+      </div>
+      <a href="#le_wagon"> -> ensuite</a>
+    </div>
+    <div class="school_images">
+      <img class="esthua" src="/assets/logo_esthua.png" alt="Logo esthua">
+      <img class="ningbo" src="/assets/logo_ningbo" alt="logo esthua">
+    </div>
+  </div>
+
+  <div class="formation-card">
+    <h2 id="le_wagon">Le Wagon</h2>
+    <p>formation maitrise Ruby</p>
+    <a href="#openclassrooms"> -> ensuite</a>
+  </div>
+  <div class="formation-card">
+    <h2 id="openclassrooms">Openclassrooms</h2>
+    <p> formation maitrise php </p>
+  </div>
+
+</div>
+
+<%= link_to 'Voir mes réalisations', root_path %>
+
+</section>

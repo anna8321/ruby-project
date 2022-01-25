@@ -15,6 +15,20 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <header>
+      <h1>Anna MEI</h1>
+      <nav>
+        <ul>
+          <li><%= link_to 'Accueil', root_path %></li>
+          <li><%= link_to 'A propos', user_path(1) %></li>
+          <li><a href="#">Me contacter</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div id="bloc_page">
+      <%= yield %>
+    </div>
   </body>
 </html>
